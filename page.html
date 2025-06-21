@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Page Layout</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      header {
+        background-color: #3498db;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .container {
+        display: flex;
+        min-height: 80vh;
+        background-color: rgb(239, 239, 12);
+      }
+
+      aside {
+        background-color: #f1f1f1;
+        width: 25%;
+        padding: 20px;
+      }
+
+      main {
+        background-color: #ecf0f1;
+        flex: 1;
+        padding: 20px;
+      }
+
+      footer {
+        background-color: #2c3e50;
+        color: white;
+        text-align: center;
+        padding: 15px;
+      }
+
+      header .logo-container img {
+        height: 50px;
+      }
+      .header {
+        justify-content: flex-start;
+        gap: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <img src="https://static.collegedekho.com/media/img/institute/logo/Malla_reddy_University_logo.png" alt="Logo" />
+      </div>
+      <h1>Malla Reddy University</h1>
+    </header>
+
+    <div class="container">
+      <aside>
+        <h2>Side Bar</h2>
+        <p>Navigation links or ads go here.</p>
+      </aside>
+
+      <main>
+        <h2>Hello Students,</h2>
+        <p>Welcome to Malla Reddy University.</p>
+      </main>
+    </div>
+
+    <footer>
+      <p>
+        &copy; 2025 | mallareddyuniversity.<br />Education | All rights
+        reserved.
+      </p>
+    </footer>
+  </body>
+</html>
